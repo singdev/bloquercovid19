@@ -7,7 +7,7 @@ const result = decoded.split("value=")[1];
 console.log(result);
 
 let resultStr = "";
-if (result < 114) {
+if (result < 80) {
     resultStr = "Votre état ne nécessite pas un avis médical";
 } else {
     resultStr = "Votre état nécessite un avis médical.";
