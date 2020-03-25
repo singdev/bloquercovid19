@@ -1,9 +1,10 @@
 /**
-
     color-pm: #6bba62
     color-pm-dark: #307470
     color-pm-light: #9ae17b
 
+    font-family: 'Merriweather', serif;
+    font-family: 'Baloo Da 2', cursive;
 */
 
 
@@ -11,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive;
 }
 
 header {
@@ -127,6 +129,18 @@ button, .custom-link {
     background-color: #6bba62;
     color: white;
     border: none;
+    padding: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    transition: 1s;
+}
+
+.custom-link-lite {
+    text-decoration: none;
+    background-color: white;
+    color: #6bba62;
+    border: 1px solid #6bba62;
     padding: 16px;
     border-radius: 4px;
     display: inline-block;
