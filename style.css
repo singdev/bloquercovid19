@@ -1,0 +1,163 @@
+/**
+
+    color-pm: #6bba62
+    color-pm-dark: #307470
+    color-pm-light: #9ae17b
+
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #cccccc;
+    background-color: white;
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.logo {
+    width: auto;
+    height: 16vh;
+}
+
+nav {
+    display: none;
+    transition: 0.4s;
+}
+
+.show-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 19vh;
+    background-color: white;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #6bba62;
+    color: #307470;
+}
+
+.humberger-btn {
+    color: #6bba62;
+    border: 1px solid #6bba62;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.home-cn {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)), url(https://images.unsplash.com/photo-1542884748-2b87b36c6b90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.explanation {
+    padding: 20px;
+}
+
+.explanation h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.explanation p {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.test-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: -1px 2px 10px #444444;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+}
+
+.form-group input {
+    padding: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.test-form .custom-link {
+    width: 100%;
+}
+
+button, .custom-link {
+    text-decoration: none;
+    background-color: #6bba62;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+main section h1 {
+    color: #6bba62;
+    text-align: center;
+    padding: 20px;
+    font-size: 5vw;
+}
+
+footer {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+footer h1 {
+    color: #6bba62;
+    padding-bottom: 8px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+strong {
+    color: #307470;
+    font-weight: bold;
+    font-size: 20px;
+}

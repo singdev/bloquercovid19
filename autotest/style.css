@@ -1,0 +1,62 @@
+
+.progress-bar {
+    height: 2vh;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    width: 100vw;
+}
+
+.progress-bar-value {
+    width: 0%;
+    background-color: #9ae17b;
+    height: 100%;
+    transition: 0.8s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.form-suggestion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 80vw;
+}
+
+.form-suggestion label {
+    border: 1px solid #777777;
+    color: #777777;
+    flex-grow: 10;
+    text-align: right;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: 0.4s;
+    width: 100%;
+    display: block;
+
+}
+
+.form-suggestion input {
+    margin-left: 20px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #307470;
+    color: white;
+}
+
+h1 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+}
