@@ -29,7 +29,6 @@ header {
     top: 0px;
     left: 0px;
     width: 100vw;
-    overflow-x: hidden;
 }
 
 .logo {
@@ -45,16 +44,16 @@ nav {
 .show-nav {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     left: 0px;
-    top: 19vh;
+    top: 14vh;
     background-color: white;
 }
 
 .nav-item {
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 16px 16px;
     border-bottom: 1px solid #6bba62;
     color: #307470;
 }
@@ -65,6 +64,7 @@ nav {
     padding: 8px;
     background-color: white;
     border-radius: 4px;
+    margin-right: 20px;
 }
 
 button:hover {

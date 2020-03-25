@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Merriweather&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
     <title>Auto Test | Bloquer covid-19</title>
+
+    <style>
+        .good, .bad {
+            display: none;
+        }
+
+        .good i {
+            font-size: 72px;
+            color: green;
+        }
+
+        .bad i {
+            font-size: 72px;
+            color: tomato;
+        }
+
+        .show {
+            display: block;
+        }
+
+        @keyframes scaling{
+            0% {
+                transform: scale(1.0);
+            }
+            100% {
+                transform: scale(4.0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,6 +47,14 @@
 
     <main>
         <h1>Résultat</h1>
+
+        <div class="good">
+            <i class="far fa-smile-wink"></i>
+        </div>
+
+        <div class="bad">
+            <i class="fas fa-skull-crossbones"></i>
+        </div>
 
         <p class="resultat"></p>
 
