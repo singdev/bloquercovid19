@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Merriweather&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="shortcut" type="image/jpg" href="favicon.jpeg">
     <link rel="stylesheet" href="style.css">
     <title>Bloquer Covid-19</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="logo-cn">
             <img src="./assets/logo.jpg" alt="Logo" class="logo">
@@ -28,10 +31,11 @@
     <div class="home-cn">
         <div class="explanation">
             <h1>Auto Test</h1>
-            <p>Participez à lutter contre la propagation du virus COVID-19 en répondant simplement à un questionaire issu des recommendations de l'OMS</p>
+            <p>Participez à lutter contre la propagation du virus COVID-19 en répondant simplement à un questionaire
+                issu des recommendations de l'OMS</p>
         </div>
 
-        
+
         <div class="test-form">
 
             <div class="form-group">
@@ -41,7 +45,7 @@
 
             <div class="form-group">
                 <label for="quartier">Dans quel quartier habitez vous ?</label>
-                <input type="text" id="quartier" placeholder="Exemple: Bambouchine">    
+                <input type="text" id="quartier" placeholder="Exemple: Bambouchine">
             </div>
 
             <a href="autotest/index.html" class="custom-link disable">Accéder au test</a>
@@ -51,14 +55,66 @@
     <main>
         <section>
             <h1 id="apropos">A propos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque similique quae hic ipsa rerum praesentium libero veritatis quasi iusto, in fuga debitis ad vitae reprehenderit laborum! Debitis molestiae id pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque similique quae hic ipsa rerum praesentium
+                libero veritatis quasi iusto, in fuga debitis ad vitae reprehenderit laborum! Debitis molestiae id
+                pariatur?</p>
         </section>
 
 
 
         <section id="bongestes">
             <h1>Bon gestes</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ab nostrum obcaecati quas, hic vero unde animi labore vitae eum ipsa ea aliquid asperiores facere odio corporis? Quam, sequi magni!</p>
+
+            <div class="gestes">
+                <div class="geste">
+                    <i class="fas fa-stethoscope"></i>
+                    <h2>Ce laver les mains fréquemment et correctement</h2>
+                    <p>Bien se laver les mains (avec du savon et de l'eau) minimise le risque d'être contaminé après
+                        avoir
+                        été en contact avec une surface qui a été préalablement contaminé par une personne malade, puis
+                        se
+                        toucher le visage, la bouche ou les yeux</p>
+                </div>
+
+                <div class="geste">
+                    <i class="fas fa-stethoscope"></i>
+                    <h2>Avoir du gel hydro-alcoolique sur soi</h2>
+                    <p>Les pharmacies ont reçu des gels hydro-alcooliques. Il est donc possible de s'en procurer et
+                        sinon il
+                        peut être possible d'en fabriquer à la maison.</p>
+                </div>
+
+                <div class="geste">
+                    <i class="fas fa-stethoscope"></i>
+                    <h2>Maintenir une distance social</h2>
+                    <p>Il faut observer une distance de sécurité d'un mètre entre les personnes. C'est la distance qui
+                        permet de ne pas être touché par les goutellettes du nez ou de la bouche susceptible de contenir
+                        le
+                        virus. Lorsque l'endroit est confiné et qu'il n' est pas possible de respecter cette distance de
+                        sécurité le spécialise recommande de tourner le dos à la personne malade afin que les sécrétions
+                        aient moins de risque de toucher le visage.</p>
+                </div>
+
+                <div class="geste">
+                    <i class="fas fa-stethoscope"></i>
+                    <h2>Tousser et éternuer dans son coude</h2>
+                </div>
+
+                <div class="geste">
+                    <i class="fas fa-stethoscope"></i>
+                    <h2>Utiliser des mouchoirs à usage unique</h2>
+                </div>
+
+            </div>
+
+            <div class="geste-illustrations">
+                <img src="./assets/Mouchoir.png" title="Bien" alt="Gel hydro-alcoolique">
+                <img src="./assets/Distances.png" title="Bien" alt="Distance de sécurité">
+                <img src="./assets/Lavez mains.png" title="Bien" alt="Gel hydro-alcoolique">
+                <img src="./assets/Contact.png" title="Mal" alt="Gel hydro-alcoolique">
+                <img src="./assets/Visage.png" title="Mal" alt="">
+            </div>
+
         </section>
 
     </main>
@@ -68,10 +124,11 @@
         <section>
             <h1>Contact</h1>
             <p>Pour plus d'information</p>
-            <p>Appelez le <strong>1410</strong>  si vous résidez au Gabon</p>
+            <p>Appelez le <strong>1410</strong> si vous résidez au Gabon</p>
         </section>
     </footer>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -160,6 +160,7 @@ main section h1 {
     text-align: center;
     padding: 20px;
     font-size: 5vw;
+    padding-top: 100px;
 }
 
 footer {
@@ -189,6 +190,44 @@ button.disable:hover, a.disable:hover {
 
 p, input, label {
     font-size: 18px;
+}
+
+.geste {
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.geste i {
+    color: #6bba62;
+    font-size: 32px;
+}
+
+.geste h2 {
+    color: #6bba62;
+    padding: 16px;
+}
+
+.geste p {
+    color: #777777;
+}
+
+.geste-illustrations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.geste-illustrations img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+.geste-illustrations img:hover {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 900px){
@@ -226,5 +265,16 @@ p, input, label {
 
     .explanation p {
         text-align: start;
+    }
+
+    .gestes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .geste {
+        width: 30%;
     }
 }
