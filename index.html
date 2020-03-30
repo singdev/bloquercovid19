@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="shortcut" type="image/jpg" href="favicon.jpeg">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="shortcut icon" type="imge/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Bloquer Covid-19</title>
 </head>
@@ -17,7 +18,7 @@
         <div class="logo-cn">
             <img src="./assets/logo.jpg" alt="Logo" class="logo">
         </div>
-
+        <img src="./assets/logo_sing.png" class="logo_sing" alt="LOGO SING">
         <div class="nav-menu-cn">
             <button class="humberger-btn" onclick="toogleNavMenu()"><i class="fa fa-bars"></i></button>
 
@@ -55,95 +56,89 @@
     </div>
 
     <main>
-        <section  id="apropos">
-            <h1>A propos</h1>
-            <p>L'infection à coronavirus est une épidémie qui touche le monde entier. Pour l'instant il n'existe aucun remède officiel contre ce virus. En général on peut guérir après quelque temps mais les symptomes peuvent évoluer (Surtous si on est agé, ou on a des problèmes de santé particulier) et nécessiter une assistance respiratoire. Dans les pays ou le nombre de décès ne cesse d'augmenter, cela est dû au faite que les structures de santé n'ont pas assez de matériel
-                pour s'occuper de tout les malades. La meilleur solution pour empêcher le nombre de décès d'augmenter actuellement c'est de réduire le nombre de personne infectés. Le virus ce transmettant essentiellement par contact, chacun doit donc pouvoir lutter contre la propagation du virus en ayant la bonne attitude.
-            </p>
-
-            <p>
-                <strong>Bloquercovid19</strong> est une application web développé par la <a href="https://www.sing.ga" target="blank">SING SA</a> pour aider tout un chacun à bloquer covid-19, chacun à son niveau. Pour cela dans cette application vous trouverez:
-            </p>
-
-            <ul>
-                <li><strong>Auto Test:</strong>
-                <p>Ce test qui est issu des recommandations de l'OMS a pour objectif de protéger le personnel de santé. En effet c'est une premier consultation à distance qui permet au médecin de prendre ces précaution pour une éventuel intervention et mieux orienter le patient très rapidement.</p></li>
-            
-                <li><strong>Bon gestes</strong>
-                <p>Rappel des gestes barrière à adopter et quelque méthode pour être efficace.</p></li>
-
-                <li><strong>Solution pour les entreprises</strong>
-                <p>Aider les entreprises à continuer leur activité en ce temps de confinement en mettant à leur faisant (re)découvrir les outils permettant de travailler à distance afin de réduire au maximum les contacts.</p></li>
+        <div class="main-content">
+            <section  id="apropos">
+                <h1>A propos</h1>
+                <p>L'infection à coronavirus est une épidémie qui touche le monde entier. Pour l'instant il n'existe aucun remède officiel contre ce virus. En général on peut guérir après quelque temps mais les symptomes peuvent évoluer (Surtous si on est agé, ou on a des problèmes de santé particulier) et nécessiter une assistance respiratoire. Dans les pays ou le nombre de décès ne cesse d'augmenter, cela est dû au faite que les structures de santé n'ont pas assez de matériel
+                    pour s'occuper de tout les malades. La meilleur solution pour empêcher le nombre de décès d'augmenter actuellement c'est de réduire le nombre de personne infectés. Le virus ce transmettant essentiellement par contact, chacun doit donc pouvoir lutter contre la propagation du virus en ayant la bonne attitude.
+                </p>
+    
+                <p>
+                    <strong>Bloquercovid19</strong> est une application web développé par la <a href="https://www.sing.ga" target="blank">SING SA</a> pour aider tout un chacun à bloquer covid-19, chacun à son niveau. Pour cela dans cette application vous trouverez:
+                </p>
+    
+                <ul>
+                    <li><strong>Auto Test:</strong>
+                    <p>Ce test qui est issu des recommandations de l'OMS a pour objectif de protéger le personnel de santé. En effet c'est une premier consultation à distance qui permet au médecin de prendre ces précaution pour une éventuel intervention et mieux orienter le patient très rapidement.</p></li>
                 
-                <li><strong>Tracker Covid</strong>
-                <p>Suivre l'évolution de l'épidémie dans le monde entier.</p></li>
-            </ul>
-
-        </section>
-
-
-
-        <section id="bongestes">
-            <h1>Bon gestes</h1>
-
-            <div class="gestes">
-                <div class="geste">
-                    <i class="fas fa-stethoscope"></i>
-                    <h2>Ce laver les mains fréquemment et correctement</h2>
-                    <p>Bien se laver les mains (avec du savon et de l'eau) minimise le risque d'être contaminé après
-                        avoir
-                        été en contact avec une surface qui a été préalablement contaminé par une personne malade, puis
-                        se
-                        toucher le visage, la bouche ou les yeux</p>
+                    <li><strong>Bon gestes</strong>
+                    <p>Rappel des gestes barrière à adopter et quelque méthode pour être efficace.</p></li>
+    
+                    <li><strong>Solution pour les entreprises</strong>
+                    <p>Aider les entreprises à continuer leur activité en ce temps de confinement en  leur faisant (re)découvrir les outils permettant de travailler à distance afin de réduire au maximum les contacts.</p></li>
+                    
+                    <li><strong>Tracker Covid</strong>
+                    <p>Suivre l'évolution de l'épidémie dans le monde entier.</p></li>
+                </ul>
+    
+            </section>
+    
+    
+    
+            <section id="bongestes">
+                <h1>Bon gestes</h1>
+    
+                <p>Pour empêcher le virus d'infecter un plus grand nombre de personne, il est extrêmement important de respecter les consignes suivante qui sont directement transmise par l'OMS.</p>
+                <div class="gestes">
+                    <div class="geste">
+                        <img src="./assets/Lavez mains.png" title="Bien" alt="Gel hydro-alcoolique">
+                        <h2>Ce laver les mains fréquemment et correctement</h2>
+                        <p>Bien se laver les mains (avec du savon et de l'eau) minimise le risque d'être contaminé après
+                            avoir
+                            été en contact avec une surface qui a été préalablement contaminé par une personne malade, puis
+                            se
+                            toucher le visage, la bouche ou les yeux</p>
+                    </div>
+    
+                    <div class="geste">
+                        <img src="./assets/Alcool.png" title="Bien" alt="Gel hydro-alcoolique">
+                        <h2>Avoir du gel hydro-alcoolique sur soi</h2>
+                        <p>Les pharmacies ont reçu des gels hydro-alcooliques. Il est donc possible de s'en procurer et
+                            sinon il
+                            peut être possible d'en fabriquer à la maison.</p>
+                    </div>
+    
+                    <div class="geste">
+                        <img src="./assets/Distances.png" title="Bien" alt="Distance de sécurité">
+                        <h2>Maintenir une distance social</h2>
+                        <p>Il faut observer une distance de sécurité d'un mètre entre les personnes. C'est la distance qui
+                            permet de ne pas être touché par les goutellettes du nez ou de la bouche susceptible de contenir
+                            le
+                            virus. Lorsque l'endroit est confiné et qu'il n' est pas possible de respecter cette distance de
+                            sécurité le spécialise recommande de tourner le dos à la personne malade afin que les sécrétions
+                            aient moins de risque de toucher le visage.</p>
+                    </div>
+    
+                    <div class="geste">
+                        <i class="fas fa-stethoscope"></i>
+                        <h2>Tousser et éternuer dans son coude</h2>
+                    </div>
+    
+                    <div class="geste">
+                        <img src="./assets/Mouchoir.png" title="Bien" alt="Gel hydro-alcoolique">
+                        <h2>Utiliser des mouchoirs à usage unique</h2>
+                    </div>
+    
                 </div>
-
-                <div class="geste">
-                    <i class="fas fa-stethoscope"></i>
-                    <h2>Avoir du gel hydro-alcoolique sur soi</h2>
-                    <p>Les pharmacies ont reçu des gels hydro-alcooliques. Il est donc possible de s'en procurer et
-                        sinon il
-                        peut être possible d'en fabriquer à la maison.</p>
-                </div>
-
-                <div class="geste">
-                    <i class="fas fa-stethoscope"></i>
-                    <h2>Maintenir une distance social</h2>
-                    <p>Il faut observer une distance de sécurité d'un mètre entre les personnes. C'est la distance qui
-                        permet de ne pas être touché par les goutellettes du nez ou de la bouche susceptible de contenir
-                        le
-                        virus. Lorsque l'endroit est confiné et qu'il n' est pas possible de respecter cette distance de
-                        sécurité le spécialise recommande de tourner le dos à la personne malade afin que les sécrétions
-                        aient moins de risque de toucher le visage.</p>
-                </div>
-
-                <div class="geste">
-                    <i class="fas fa-stethoscope"></i>
-                    <h2>Tousser et éternuer dans son coude</h2>
-                </div>
-
-                <div class="geste">
-                    <i class="fas fa-stethoscope"></i>
-                    <h2>Utiliser des mouchoirs à usage unique</h2>
-                </div>
-
-            </div>
-
-            <div class="geste-illustrations">
-                <img src="./assets/Mouchoir.png" title="Bien" alt="Gel hydro-alcoolique">
-                <img src="./assets/Distances.png" title="Bien" alt="Distance de sécurité">
-                <img src="./assets/Lavez mains.png" title="Bien" alt="Gel hydro-alcoolique">
-                <img src="./assets/Contact.png" title="Mal" alt="Gel hydro-alcoolique">
-                <img src="./assets/Visage.png" title="Mal" alt="">
-            </div>
-
-        </section>
-
-        <section>
-            <h1 id="stat">Statistiques</h1>
-
-            <iframe src="https://app.developer.here.com/coronavirus/" width="100%" height="400" frameborder="0"></iframe>
-        </section>
-
+    
+            </section>
+    
+            <section id="stat">
+                <h1>Statistiques</h1>
+                <p>Accédez en temps réel au informations sur l'évolution de l'épidémie dans le monde entier grâce à l'application <a href="https://app.developer.here.com/coronavirus/">Tracking Coronavirus COVID-19</a> </p>
+                <iframe src="https://app.developer.here.com/coronavirus/" width="100%" height="400" frameborder="0"></iframe>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -152,6 +147,7 @@
             <h1>Contact</h1>
             <p>Pour plus d'information</p>
             <p>Appelez le <strong>1410</strong> si vous résidez au Gabon</p>
+            <p class="copyright">copyright &copy; 2020 <a href="http://www.sing.ga">SING SA</a></p>
         </section>
     </footer>
 
