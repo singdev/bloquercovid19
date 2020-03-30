@@ -53,7 +53,7 @@ main {
 }
 
 input[type="radio"]:checked+label {
-    background-color: #307470;
+    background-color: #000051;
     color: white;
 }
 
