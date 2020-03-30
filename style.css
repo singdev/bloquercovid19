@@ -257,10 +257,10 @@ button.disable:hover, a.disable:hover {
 }
 
 #apropos li {
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     box-shadow: -1px 2px 5px #aaaaaa;
-    margin: 16px;
+    margin: 8px;
     color: black;
     font-size: 14px;
     transition: 0.4s;
@@ -298,11 +298,43 @@ a {
     padding: 40px 20px;
 }
 
+section:nth-child(2n) {
+    background-color: #00c652;
+    padding: 16% 20px 24% 20px;
+    color: white;
+}
+
+section:nth-child(2n) h1 {
+    color: white;
+}
+
+.geste h2, .geste p {
+    color: white;
+}
+
+
+.geste h2 {
+    font-size: 18px;
+}
+
+.method {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    background-color: white;
+    box-shadow: -1px 2px 5px green;
+    padding: 20px;
+}
+
+.method img, .method h3 {
+    width: 100%;
+    color: #00c652;
+}
+
 @media screen and (min-width: 900px){
 
     body {
-        background-image:
-         url(https://images.unsplash.com/photo-1574482620826-40685ca5ebd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+         background-color: #00c652;
          background-position: center center;
          width: 100%;
          display: flex;
@@ -321,7 +353,7 @@ a {
         background-color: rgba(255, 255, 255, 1);
         opacity: 0.95;
         border-radius: 8px;
-        box-shadow: -5px 10px 10px #444444;
+        box-shadow: -1px 2px 5px #007700;
         padding: 5%;
     }
 
@@ -376,21 +408,6 @@ a {
     }
 
     section:nth-child(2n) {
-        clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
-        background-color: #00c652;
-        padding: 16% 20px 24% 20px;
-        color: white;
-    }
-
-    section:nth-child(2n) h1 {
-        color: white;
-    }
-
-    .geste h2, .geste p {
-        color: white;
-    }
-
-    .geste h2 {
-        font-size: 18px;
+        clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
     }
 }
