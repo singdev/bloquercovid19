@@ -1,4 +1,13 @@
 
+window.addEventListener('load', () => {
+    document.querySelectorAll('.nav-item').forEach(n => {
+        n.addEventListener('click', () => {
+            console.log("Click");
+            toogleNavMenu();
+        });
+    })
+})
+
 function toogleNavMenu(){
     document.querySelector('nav').classList.toggle('show-nav');
 }

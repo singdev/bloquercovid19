@@ -283,6 +283,11 @@ button.disable:hover, a.disable:hover {
     padding: 40px;
 }
 
+#stat img {
+    width: 50%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: rgb(121, 121, 4);
@@ -379,15 +384,12 @@ article h2 {
     transition: 0.4s;
 }
 
-.card:hover {
-    transform: translateY(-10%);
-    box-shadow: -5px 3px 10px green;
-}
-
 .card h2 {
     background-color: #00c652;
     color: white;
     padding: 5%;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .card a {
@@ -397,6 +399,30 @@ article h2 {
 .card p {
     color: #777777;
     padding: 5%;
+    text-align: justify;
+}
+
+.card-2 {
+    background-color: white;
+    padding: 16px;
+    box-shadow: -1px 2px 5px green;
+}
+
+.card-2 a {
+    padding: 16px;
+}
+
+.card-2 img {
+    width: 80px;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.post h3 {
+    text-align: center;
 }
 
 @media screen and (min-width: 900px){
@@ -410,6 +436,13 @@ article h2 {
 
     .card {
         width: 30%;
+    }
+
+    .post {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .post iframe {
