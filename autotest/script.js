@@ -1,9 +1,9 @@
 import { AutoTest, Question } from "./autotest.js";
 
 const questions = [
-    new Question("Avez vous voyagé il y' a un mois ?", ["Oui", "Non"], [5, 0], null, null),
-    new Question("Avez vous l'un des symptomes suivant: Fièvre, toux, maux de tête ", ["Oui", "Non"], [5, 0], null, null),
-    new Question("Avez vous été en contact avec quelqu'un qui revient de l'étrangé ou qui présente des symptomes de grippe depuis plusieurs jour ?", ["Oui", "Non"], [5, 0], null, null),
+    new Question("Avez-vous voyagé hors du pays récemment ?", ["Oui", "Non"], [5, 0], null, null),
+    new Question("Avez-vous l'un des symptômes suivant: fièvre, toux, maux de tête ?", ["Oui", "Non"], [5, 0], null, null),
+    new Question("Avez-vous été en contact avec quelqu'un qui revient de l'étranger ou qui présente les symptômes de grippe depuis plusieurs jours ? ", ["Oui", "Non"], [5, 0], null, null),
     new Question("Pensez-vous avoir ou avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?",
      ["Oui","Non" ], [5, 0],
      [ new Question("quelle température ? ", ["37°c a 38°c", "38°C a 39°C", "Plus de 39°C"], [2, 3, 5], null,null)], (reponse) => {
@@ -31,7 +31,6 @@ const questions = [
     new Question("Êtes-vous essoufflé lorsque vous parlez ou faites un petit effort ?", ["Oui", "Non"],[5, 0], null, null),
     new Question("En ce moment, comment vous sentez-vous, physiquement ?", ["Bien", "Assez bien", "Mal", "Très mal"],[0, 2, 4, 5], null, null),
     new Question("Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique. :", ["Entre 0 et 12 ans", "Entre 13 et 24 ans", "Entre 25 et 48 ans", "Entre 49 et 64 ans", "Plus de 65 ans"],[1, 1, 2, 4, 5], null, null),
-    new Question("Quel est votre poids ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection. (en Kg)", ["0-25 kg", "26-50 kg", "51-75 kg", "76 au 100 kg", "Plus de 100 kg"  ], [4, 3, 2, 1, 0], null, null),
     new Question("Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?", ["Oui", "Non", "Ne sait pas"], [5, 0, 2], null, null),
     new Question("Êtes-vous diabétique ?", ["Oui", "Non"], [5, 0], null, null),
     new Question("Avez-vous ou avez-vous eu un cancer ?", ["Oui", "Non"], [5, 0], null, null),
