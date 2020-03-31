@@ -1,3 +1,5 @@
+import { AUTO_TEST_URL } from '../share/server-url.js';
+
 export class Question {
 
     /**
@@ -97,5 +99,22 @@ export class AutoTest {
         } else {
             return false;
         }
+    }
+
+    postAutoTest(ville, quartier){
+        const autotest = { ville, quartier, question};
+        fetch(`${AUTO_TEST_URL}/autotest`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body:  { json: JSON.stringify(autotest) }
+        }).then(response => response.json())
+        .then(json => {
+            console.log(json);
+        })
+        .catch(err => {
+            console.log(err);
+        });
     }
 }

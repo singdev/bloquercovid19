@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Merriweather&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
     <title>Auto Test | Bloquer covid-19</title>
 
     <style>
-
         .actions {
             padding: 40px;
             display: flex;
@@ -22,6 +22,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo-cn">
@@ -32,14 +33,27 @@
     <main>
         <h1>Auto Test</h1>
 
-        <p>Auto Test est une application e-santé qui permet à toutes personnes le souhaitant de déterminer s’il est porteur du virus COVID 19. Basé sur le test de l’OMS cet outil d’aide à la prise de décision vous permet de savoir s’il faut ou non contacter le <strong>1410</strong>  afin de vous faire tester.</p>
-    
-        <p> Attention la remarque donnée en fin de test est une recommandation, « Auto Test » n’a pas vocation de remplacer un test réalisé par un médecin, il s’agit avant tout d’un outil d’information</p>
+        <p>Auto Test est une application e-santé qui permet à toutes personnes le souhaitant de déterminer s’il est
+            porteur du virus COVID 19. Basé sur le test de l’OMS cet outil d’aide à la prise de décision vous permet de
+            savoir s’il faut ou non contacter le <strong>1410</strong> afin de vous faire tester.</p>
+
+        <p> Attention la remarque donnée en fin de test est une recommandation, « Auto Test » n’a pas vocation de
+            remplacer un test réalisé par un médecin, il s’agit avant tout d’un outil d’information</p>
 
         <div class="actions">
-            <a href="autotest.html" class="custom-link">Commencer le test</a>
+            <a href="#" onclick="addVilleAndQuartierOnPath(this)" class="custom-link">Commencer le test</a>
             <a href="../index.html#apropos" class="custom-link-lite">D'abord en savoir plus sur le covid-19</a>
         </div>
     </main>
+
+    <script>
+        function addVilleAndQuartierOnPath(e) {
+            const url = decodeURI(window.location);
+            const ville = url.split('?ville=')[1].split('&')[0];
+            const quartier = url.split('&quartier=')[1];
+            window.location = "autotest.html" + '?ville=' + ville + '&quartier=' + quartier;
+        }
+    </script>
 </body>
+
 </html>
