@@ -1,9 +1,12 @@
 
 window.addEventListener('load', () => {
+
     document.querySelectorAll('.nav-item').forEach(n => {
         n.addEventListener('click', () => {
             console.log("Click");
-            toogleNavMenu();
+            if(document.querySelectorAll('.humberger-btn').style.display != "none"){
+                toogleNavMenu();
+            }
         });
     })
 })
