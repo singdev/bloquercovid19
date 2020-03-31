@@ -101,20 +101,22 @@ export class AutoTest {
         }
     }
 
-    postAutoTest(ville, quartier){
-        const autotest = { ville, quartier, question};
+    postAutoTest(ville, quartier, callback){
+        const autotest = { ville, quartier, questions: this.questions};
         fetch(`${AUTO_TEST_URL}/autotest`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body:  { json: JSON.stringify(autotest) }
+            body:  JSON.stringify({ json: JSON.stringify(autotest) })
         }).then(response => response.json())
         .then(json => {
             console.log(json);
+            callback();
         })
         .catch(err => {
             console.log(err);
+            callback();
         });
     }
 }

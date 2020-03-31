@@ -2,7 +2,7 @@ import { AutoTest, Question } from "./autotest.js";
 
 const questions = [
     new Question("Avez vous voyagé il y' a un mois ?", ["Oui", "Non"], [5, 0], null, null),
-    new Question("Quel est votre état de santé actuel ?", ["J'ai de la fièvre", "J'ai de la toux", "J'ai de la grippe", "Je me sens bien"], [5, 5, 5, 0], null, null),
+    new Question("Quel est votre état de santé actuel ?", ["J'ai de la fièvre", "J'ai de la toux", "J'ai des maux de tête", "Je me sens bien"], [5, 5, 5, 0], null, null),
     new Question("Avez vous été en contact avec quelqu'un qui revient de l'étrangé ou qui présente des symptomes de grippe depuis plusieurs jour ?", ["Oui", "Non"], [5, 0], null, null),
     new Question("Pensez-vous avoir ou avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?",
      ["Oui","Non" ], [5, 0],
@@ -53,7 +53,7 @@ let canNext = false;
 
 function displayQuestionCourante(){
     if(autoTest.indexQuestionCourante == 3 && score == 0) {
-        window.location = "score.html?value=" + score;
+        finish();
     } else if(autoTest.estFini() == false){
         const question = autoTest.getQuestionCourante();
         displayQuestion(question.question);
@@ -67,8 +67,18 @@ function displayQuestionCourante(){
     
         updateProgressBar();
     } else {
-        window.location = "score.html?value=" + score;
+        finish();
     }
+}
+
+function finish(){
+    const url = decodeURI(window.location);
+    const ville = url.split('?ville=')[1].split('&')[0];
+    const quartier = url.split('&quartier=')[1];
+
+    autoTest.postAutoTest(ville, quartier, () => {
+        window.location = "score.html?value=" + score;
+    });
 }
 
 function updateProgressBar(){
