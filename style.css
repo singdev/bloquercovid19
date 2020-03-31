@@ -372,7 +372,49 @@ article h2 {
     justify-content: center;
 }
 
+.card {
+    background-color: white;
+    box-shadow: -1px 2px 5px green;
+    margin: 8px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+    box-shadow: -5px 3px 10px green;
+}
+
+.card h2 {
+    background-color: #00c652;
+    color: white;
+    padding: 5%;
+}
+
+.card a {
+    color: white;
+}
+
+.card p {
+    color: #777777;
+    padding: 5%;
+}
+
 @media screen and (min-width: 900px){
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .post iframe {
+        width: 560px;
+    }
 
     body {
          background-color: #00c652;
