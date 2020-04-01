@@ -1,4 +1,5 @@
 
+
 window.addEventListener('load', () => {
 
     document.querySelectorAll('.nav-item').forEach(n => {
@@ -8,6 +9,10 @@ window.addEventListener('load', () => {
         });
     })
 })
+
+function toggleShowDropdown(e){
+    e.target.querySelector('dropdown').classList.toggle('show-dropdown');
+}
 
 function toogleNavMenu(){
     document.querySelector('nav').classList.toggle('show-nav');

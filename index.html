@@ -8,11 +8,14 @@
     pratique afin de permettre aux PME et aux populations de rester actives et productives durant cette
     période de crise sanitaire.">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="shortcut icon" type="imge/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="./share/animation.css">
+    <link rel="stylesheet" href="./share/dropdown.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Bloquer Covid-19, Gabon</title>
 </head>
 
@@ -30,13 +33,20 @@
                 <a href="#apropos" class="nav-item">À propos</a>
                 <a href="#bongestes" class="nav-item">Bons Gestes</a>
                 <a href="#stat" class="nav-item">Statistiques</a>
-                <a href="#confinement" class="nav-item">Confinement</a>
-                <a href="#solutionentreprise" class="nav-item">Solution pour les entreprises</a>
+                
+                <div class="dropdown-cn">
+                    <a href="#confinement" class="nav-item">Confinement</a>
+                    <div class="dropdown">
+                        <a href="#sedivertir" class="dropdown-item nav-item">Se divertir</a>
+                        <a href="#apprendre" class="dropdown-item nav-item">Apprendre</a>
+                    </div>
+                </div>
+                <a href="#solutionentreprise" class="nav-item">Solutions pour les entreprises</a>
             </nav>
         </div>
     </header>
 
-    <div class="home-cn">
+    <div class="home-cn" id="carousel">
         <div class="explanation">
             <h1>Auto Test</h1>
             <p>Lutter contre la propagation du virus COVID-19 en répondant à ce questionnaire.</p>
@@ -44,15 +54,49 @@
 
 
         <div class="test-form">
-
             <div class="form-group">
-                <label for="ville">Dans quelle ville vivez vous ?</label>
-                <input type="text" id="ville" placeholder="Exemple: Libreville">
-            </div>
+                <label for="ville">Dans quelle ville vivez-vous ?</label>
+                <select id="ville">
+                    <option value="Cocobeach">Cocobeach</option>
+                    <option value="Kango">Kango</option>
+                    <option value="Libreville">Libreville</option>
+                    <option value="Nkan">Nkan</option>
+                    <option value="Ntoum">Ntoum</option>
+                    <option value="Franceville">Franceville</option>
+                    <option value="Lékoni">Lékoni</option>
+                    <option value="Moanda">Moanda</option>
+                    <option value="Mounana">Mounana</option>
+                    <option value="Okondja">Okondja</option>
+                    <option value="Lambaréné">Lambaréné</option>
+                    <option value="Ndjolé">Ndjolé</option>
+                    <option value="Fougamou">Fougamou</option>
+                    <option value="Mbigou">Mbigou</option>
+                    <option value="Mimongo">Mimongo</option>
+                    <option value="Mimongo">Mimongo</option>
+                    <option value="Mouila">Mouila</option>
+                    <option value="Ndendé">Ndendé</option>
+                    <option value="Mayumba">Mayumba</option>
+                    <option value="Tchibanga">Tchibanga</option>
+                    <option value="Tsogni">Tsogni</option>
+                    <option value="Booué">Booué</option>
+                    <option value="Makokou">Makokou</option>
+                    <option value="Mékambo">Mékambo</option>
+                    <option value="Koulamoutou">Koulamoutou</option>
+                    <option value="Lastourville">Lastourville</option>
+                    <option value="Gamba">Gamba</option>
+                    <option value="Omboué">Omboué</option>
+                    <option value="Port-Gentil">Port-Gentil</option>
+                    <option value="Bitam">Bitam</option>
+                    <option value="Medouneu">Medouneu</option>
+                    <option value="Minvoul">Minvoul</option>
+                    <option value="Mitzic">Mitzic</option>
+                    <option value="Oyem">Oyem</option>
+                </select>
 
-            <div class="form-group">
-                <label for="quartier">Dans quel quartier habitez vous ?</label>
-                <input type="text" id="quartier" placeholder="Exemple: Bambouchine">
+                <div class="form-group">
+                    <label for="quartier">Dans quel quartier habitez-vous ?</label>
+                    <input type="text" id="quartier" placeholder="Exemple: PK9">
+                </div>
             </div>
 
             <a href="#" onclick="addVilleAndQuartierOnPath(this)" class="custom-link disable">Accéder au test</a>
@@ -94,7 +138,8 @@
                 <p>Pour empêcher le virus d'infecter un plus grand nombre de personne, il est extrêmement important de
                     respecter les consignes suivante qui sont directement transmise par l'OMS.</p>
                 <div class="gestes">
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/lavez_mains.png" title="Bien" alt="Gel hydro-alcoolique">
                         <h2>Se laver les mains fréquemment</h2>
                         <p style="text-align: center;">Bien se laver les mains (avec du savon et de l'eau) minimise le
@@ -103,7 +148,8 @@
                             malade, puis se toucher le visage, la bouche ou les yeux.</p>
                     </div>
 
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/alcool.png" title="Bien" alt="Gel hydro-alcoolique">
                         <h2>Avoir du gel hydro-alcoolique sur soi</h2>
                         <p>Le gel hydroalcoolique, un allié face aux épidémies. À défaut d’eau et de savon, utilisez un
@@ -111,7 +157,8 @@
                             répéter à chaque fois que nécessaire.</p>
                     </div>
 
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/distances.png" title="Bien" alt="Distance de sécurité">
                         <h2>Maintenir une distance social</h2>
                         <p>Il faut observer une distance de sécurité d'un mètre entre les personnes. C'est la distance
@@ -119,7 +166,8 @@
                             contenir le virus.</p>
                     </div>
 
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/tousser_couder.png" alt="Tousser dans le coude">
                         <h2>Tousser dans le coude</h2>
                         <p>
@@ -129,7 +177,8 @@
                         </p>
                     </div>
 
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/mouchoir.png" title="Bien" alt="Gel hydro-alcoolique">
                         <h2>Utiliser des mouchoirs à usage unique</h2>
                         <p>Pour des raisons sanitaires, il est demandé aux particuliers que les mouchoirs soient jetés
@@ -137,7 +186,8 @@
                             diffusion du virus.</p>
                     </div>
 
-                    <div class="geste">
+                    <div class="geste" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <img src="./assets/visage.png" title="Bien" alt="Ne pas toucher le visage">
                         <h2>Éviter de se toucher la bouche, le nez et les yeux </h2>
                         <p>Nez, yeux et bouches sont autant de "portes d'entrées" possibles au virus. En période
@@ -146,7 +196,8 @@
                     </div>
                 </div>
 
-                <div class="method">
+                <div class="method" data-aos="zoom-in-down" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h3>Comment se laver correctement les mains ?</h3>
                     <img src="./assets/laver_les_mains.jpg" alt="Méthode laver les mains">
                 </div>
@@ -168,10 +219,11 @@
                     frameborder="0"></iframe>
             </section>
 
-            <section id="confinement">
-                <h1>Se divertir pendant le confinement</h1>
+            <section>
+                <h1 id="sedivertir">Se divertir pendant le confinement</h1>
 
-                <div class="cards">
+                <div class="cards" data-aos="fade-down" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="card">
                         <h2>CANDY CRUSH</h2>
                         <p>Les accros au jeu mobile Candy Crush le savent déjà, puisqu’ils ont reçu un message sur
@@ -247,11 +299,12 @@
                     </div>
                 </div>
 
-                <div>
+                <div id="apprendre">
                     <h1>Continuer à apprendre pendant le confinement</h1>
 
                     <div class="learn-link">
-                        <div class="card-2">
+                        <div class="card-2" data-aos="zoom-in-up" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                             <div>
                                 <img src="https://cdn.clic2load.com/c/thumbnail280/t/k/h/khan-academy-lvS578.png"
                                     alt="">
@@ -271,7 +324,8 @@
                             </p>
                         </div>
 
-                        <div class="card-2">
+                        <div class="card-2" data-aos="zoom-in-up" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"> 
                             <div>
                                 <img src="./assets/scientia.png" alt="scientia">
                                 <p><a href="https://www.scientia.me/" target="blank">Scientia</a></p>
@@ -292,7 +346,7 @@
             </section>
 
             <section id="solutionentreprise">
-                <h1>Solution pour les entreprises</h1>
+                <h1>Solutions pour les entreprises</h1>
                 <p>Pendant cette période de confinement vous avez certainement besoins de continuer à <strong>suivre des
                         projets</strong> , à <strong>communiquer avec vos collaborateurs</strong> et <strong>échanger
                         des documents</strong> importants. Le numérique
@@ -609,6 +663,10 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

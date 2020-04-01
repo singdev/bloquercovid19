@@ -1,0 +1,38 @@
+.dropdown-item {
+    display: block;
+}
+
+@media screen and (min-width: 900px){
+.dropdown {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #000051;
+    transition: 0.4s;
+}
+
+.nav-item {
+    display: block;
+    border: none;
+}
+
+.dropdown .dropdown-item {
+    display: none;
+}
+
+}
+
+.dropdown-item:hover {
+    background-color: #cccccc;
+}
+
+.dropdown .dropdown-item {
+    padding: 8px 32px;
+    transition: 0.4s;
+}
+
+.dropdown-cn:hover .dropdown-item {
+    display: block;
+}

@@ -15,8 +15,15 @@
     font-family: 'Baloo Thambi 2', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    animation: moveTopBottom 1s;
+}
+
 header {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -29,12 +36,12 @@ header {
     position: sticky;
     top: 0px;
     left: 0px;
-    width: 100vw;
+    width: 100%;
 }
 
 .logo {
     width: auto;
-    height: 10vh;
+    height: 5vh;
 }
 
 nav {
@@ -242,45 +249,13 @@ button.disable:hover, a.disable:hover {
 }
 
 #apropos p {
-    padding: 20px;
+    padding: 8px;
     text-align: justify;
     line-height: 2em;
 }
 
-#apropos ul {
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-}
-
-#apropos li {
-    padding: 16px;
-    width: 100%;
-    box-shadow: -1px 2px 5px #aaaaaa;
-    margin: 8px;
-    color: black;
-    font-size: 14px;
-    transition: 0.4s;
-}
-
-#apropos li strong {
-    text-align: center;
-    display: block;
-    font-weight: bold;
-    padding: 8px;
-    color: #000051;
-}
-
-#apropos li:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#stat p {
-    padding: 40px;
+p {
+    padding: 20px 8px;
 }
 
 #stat img {
@@ -290,11 +265,11 @@ button.disable:hover, a.disable:hover {
 
 a {
     text-decoration: none;
-    color: rgb(121, 121, 4);
+    color: #000051;
 }
 
 .logo_sing {
-    width: 92px;
+    width: 64px;
     height: auto;
 }
 
@@ -328,7 +303,7 @@ section:nth-child(2n) h1 {
     width: 80%;
     background-color: white;
     box-shadow: -1px 2px 5px green;
-    padding: 20px;
+    padding: 16px;
 }
 
 .method img, .method h3 {
@@ -338,7 +313,7 @@ section:nth-child(2n) h1 {
 
 
 .post {
-    padding: 20px;
+    padding: 16px;
 }
 
 .post img {
@@ -400,7 +375,7 @@ article h2 {
 
 .card p {
     color: #777777;
-    padding: 5%;
+    padding: 16px;
     text-align: justify;
 }
 
@@ -433,6 +408,11 @@ article h2 {
 }
 
 @media screen and (min-width: 900px){
+
+    .logo {
+        width: auto;
+        height: 10vh;
+    }
 
     .cards {
         display: flex;
