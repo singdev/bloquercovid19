@@ -3,10 +3,8 @@ window.addEventListener('load', () => {
 
     document.querySelectorAll('.nav-item').forEach(n => {
         n.addEventListener('click', () => {
-            console.log("Click");
-            if(document.querySelectorAll('.humberger-btn').style.display != "none"){
-                toogleNavMenu();
-            }
+            document.querySelector('nav').classList.remove('show-nav');
+
         });
     })
 })

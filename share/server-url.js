@@ -1,1 +1,1 @@
-export const AUTO_TEST_URL = 'http://localhost:19190';
+export const AUTO_TEST_URL = 'http://54.38.190.167:19190';

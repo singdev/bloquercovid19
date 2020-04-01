@@ -28,15 +28,12 @@ export class Question {
     }
 
     getNote(){
-        console.log(this.notes);
-        console.log(this.reponse);
         return this.notes[this.reponse];
     }
 
     getQuestionSuivante(){
         if(this.fonctionDetermnineQuestionSuivante != null){
             const indexQuestionSuivante = this.fonctionDetermnineQuestionSuivante(this.reponse);
-            console.log("Question suivante index : " + indexQuestionSuivante);
             if(indexQuestionSuivante >= 0){
                 return this.nextQuestions[indexQuestionSuivante];
             } else {
@@ -73,7 +70,6 @@ export class AutoTest {
      * @return {Boolean}
      */
     estFini(){
-        console.log(this.questions.length + ' ' + this.indexQuestionCourante);
         return this.questions.length <= this.indexQuestionCourante;
     }
 
@@ -111,11 +107,9 @@ export class AutoTest {
             body:  JSON.stringify({ json: JSON.stringify(autotest) })
         }).then(response => response.json())
         .then(json => {
-            console.log(json);
             callback();
         })
         .catch(err => {
-            console.log(err);
             callback();
         });
     }
