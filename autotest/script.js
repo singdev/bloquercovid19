@@ -101,7 +101,6 @@ function displaySuggestion(suggestion, index){
     const element = domParser.parseFromString(template, 'text/html');
     
     element.querySelectorAll('label').forEach(label => {
-        console.log("count label");
         label.addEventListener('click', (e) => suggestionClick(e));
     });
 
