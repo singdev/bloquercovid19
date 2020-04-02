@@ -21,7 +21,9 @@ function toogleNavMenu(){
 function addVilleAndQuartierOnPath(e){
     const ville = document.querySelector('#ville').value;
     const quartier = document.querySelector('#quartier').value;
-    window.location = "autotest/index.html" + '?ville=' + ville + '&quartier=' + quartier;
+    if(ville.trim() != "" && quartier.trim() != ""){
+        window.location = "autotest/index.html" + '?ville=' + ville + '&quartier=' + quartier;
+    }
 }
 
 document.querySelector('#ville').addEventListener('keyup', (e) => {
@@ -33,7 +35,7 @@ document.querySelector('#ville').addEventListener('keyup', (e) => {
 });
 
 document.querySelector('#quartier').addEventListener('keyup', (e) => {
-    if(document.querySelector('#ville').value != "" && e.target.value != ""){
+    if(document.querySelector('#ville').value.trim() != "" && e.target.value.trim() != ""){
         document.querySelector(".custom-link").classList.remove("disable");
     } else {
         document.querySelector(".custom-link").classList.add("disable");
