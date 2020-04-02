@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../share/animation.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
     <title>Auto Test | Bloquer covid-19</title>
+
+    <style>
+
+        .progress-bar p {
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            position: absolute;
+        }
+
+        .form-suggestion {
+            animation: moveTopBottom 0.6s ease-in-out;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -17,7 +33,8 @@
 
     <!-- La barre de progression qui nous permet de voir le nombre de question qui nous reste -->
     <div class="progress-bar">
-        <div id="pbv" class="progress-bar-value"></div>
+        <div id="pbv" class="progress-bar-value">
+        </div>
     </div>
 
     <main>
