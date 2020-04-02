@@ -46,6 +46,10 @@ main {
 
 }
 
+input[type="radio"] {
+    display: none;
+}
+
 .form-suggestion input {
     margin-left: 20px;
     position: absolute;
