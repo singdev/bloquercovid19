@@ -49,6 +49,17 @@ nav {
     transition: 0.4s;
 }
 
+.stat-gabon {
+    padding: 0px;
+}
+
+#stat-cas-gabon {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    color: black;
+    padding: 8px;
+}
+
 .show-nav {
     display: flex;
     flex-direction: column;

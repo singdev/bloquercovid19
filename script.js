@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
 
         });
     })
+
+    fetchCovid19Data();
 })
 
 function toggleShowDropdown(e){
@@ -47,4 +49,24 @@ document.querySelector(".custom-link").addEventListener('click', function (event
     if (event.target.classList.contains('disable')) {
       event.preventDefault();
     }
-  });
+});
+
+function fetchCovid19Data(){
+    fetch('http://54.38.190.167:19190/api').then(response => response.json())
+    .then(json => {
+        if(json){
+            const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novemnbre", "Décembre"];
+
+            const result = json.data.find(s =>  s.Country_Region == "Gabon");
+            console.log(result);
+            const date = new Date(result.Last_Update);
+            document.querySelector('#confirmed').innerHTML = "Gabon: " + result.Confirmed;
+            document.querySelector('#deces').innerHTML = result.Deaths;
+            document.querySelector('#stat-cas-gabon').innerHTML = result.Confirmed;
+            document.querySelector("#stat-date-gabon").innerHTML = "Mise à jour le " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+
+        }
+    }).catch(err => {
+        console.log(err);
+    });
+}
