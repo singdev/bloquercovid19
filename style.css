@@ -425,6 +425,11 @@ article h2 {
     height: 516px;
 }
 
+.video-method {
+    width: 100%;
+    height: 315px;
+}
+
 @media screen and (min-width: 900px){
 
     #stat-covid {
