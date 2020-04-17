@@ -315,6 +315,7 @@ section:nth-child(2n) h1 {
     background-color: white;
     box-shadow: -1px 2px 5px green;
     padding: 16px;
+    margin-top: 20px;
 }
 
 .method img, .method h3 {
