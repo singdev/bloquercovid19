@@ -52,7 +52,7 @@ document.querySelector(".custom-link").addEventListener('click', function (event
 });
 
 function fetchCovid19Data(){
-    fetch('http://54.38.190.167:19190/api').then(response => response.json())
+    fetch('https://app.bloquercovid19.com/bat/api').then(response => response.json())
     .then(json => {
         if(json){
             const months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novemnbre", "Décembre"];
