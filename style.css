@@ -418,7 +418,17 @@ article h2 {
     display: block;
 }
 
+#stat-covid {
+    width: 100%;
+    height: 516px;
+}
+
 @media screen and (min-width: 900px){
+
+    #stat-covid {
+        width: 1024px;
+        height: 560px;
+    }
 
     .logo {
         width: auto;
