@@ -385,9 +385,10 @@ article h2 {
 }
 
 .card p {
-    color: #777777;
+    color: #000000;
     padding: 16px;
-    text-align: justify;
+    text-align: center;
+    font-size: 16px;
 }
 
 .card-2 {
