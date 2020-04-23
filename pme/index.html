@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quel impact la crise du COVID-19 a-t-elle eu sur votre entreprise ?</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quel impact la crise du Covid-19 a t-elle eu sur votre entreprise?</h1>
+    </header>
+
+    <main>
+        <div class="questions">
+            <div class="question current-question">
+                <p class="title">
+                    Nom de votre entreprise
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" name="nom-entreprise" id="nom-entreprise">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Dans quel ville êtes vous situés?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <select id="entreprise-ville" name="entreprise-ville">
+                            <option value="Cocobeach">Cocobeach</option>
+                            <option value="Kango">Kango</option>
+                            <option value="Libreville">Libreville</option>
+                            <option value="Nkan">Nkan</option>
+                            <option value="Ntoum">Ntoum</option>
+                            <option value="Franceville">Franceville</option>
+                            <option value="Lékoni">Lékoni</option>
+                            <option value="Moanda">Moanda</option>
+                            <option value="Mounana">Mounana</option>
+                            <option value="Okondja">Okondja</option>
+                            <option value="Lambaréné">Lambaréné</option>
+                            <option value="Ndjolé">Ndjolé</option>
+                            <option value="Fougamou">Fougamou</option>
+                            <option value="Mbigou">Mbigou</option>
+                            <option value="Mimongo">Mimongo</option>
+                            <option value="Mimongo">Mimongo</option>
+                            <option value="Mouila">Mouila</option>
+                            <option value="Ndendé">Ndendé</option>
+                            <option value="Mayumba">Mayumba</option>
+                            <option value="Tchibanga">Tchibanga</option>
+                            <option value="Tsogni">Tsogni</option>
+                            <option value="Booué">Booué</option>
+                            <option value="Makokou">Makokou</option>
+                            <option value="Mékambo">Mékambo</option>
+                            <option value="Koulamoutou">Koulamoutou</option>
+                            <option value="Lastourville">Lastourville</option>
+                            <option value="Gamba">Gamba</option>
+                            <option value="Omboué">Omboué</option>
+                            <option value="Port-Gentil">Port-Gentil</option>
+                            <option value="Bitam">Bitam</option>
+                            <option value="Medouneu">Medouneu</option>
+                            <option value="Minvoul">Minvoul</option>
+                            <option value="Mitzic">Mitzic</option>
+                            <option value="Oyem">Oyem</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Etes vous enregistré à l'ANPI?</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="anpi-oui">Oui</label>
+                        <input type="radio" name="anpi" id="anpi-oui" value="oui">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="anpi-non">Non</label>
+                        <input type="radio" name="anpi" id="anpi-non" value="non">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Merci d'inscrire votre numéro de fiche circuit ANPI ( numéro à 10 chiffres)</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="number" id="anpi-numero" name="anpi-numero" placeholder="Numéro de l'anpi">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Merci d'inscrire le numéro de votre pièce d'identité valide (Récépissé, passeport,
+                    carte de séjour ou carte d'identité)</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="number" id="anpi-numero-piece" placeholder="Numéro de Pièce d'identification">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Pendant la période du COVID-19, qu'est ce qui a été le plus difficile pour vous et vos employer à
+                    réaliser ?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="difficulte">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quel est pour vous l'impact le plus important du COVID-19 sur votre activité ?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="impact">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quelles leçons tirées vous à ce stade de cette crise ?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="lecon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quelle est votre plus grande crainte pour l'avenir ?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="crainte">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quel est votre secteur d’activité ?
+                </p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <select id="secteur" name="secteur">
+                            <option value="Agriculture / élevage">Agriculture / élevage</option>
+                            <option value="Mines / ressources naturelles">Mines / ressources naturelles</option>
+                            <option value="Construction / BTP">Construction / BTP</option>
+                            <option value="Industrie agroalimentaire">Industrie agroalimentaire</option>
+                            <option value="Industrie non alimentaire">Industrie non alimentaire</option>
+                            <option value="Commerce de détail / de gros">Commerce de détail / de gros</option>
+                            <option value="Voyage / transport">Voyage / transport</option>
+                            <option value="Hébergement / restauration">Hébergement / restauration</option>
+                            <option value="Informatique">Informatique</option>
+                            <option value="Ecologie">Ecologie</option>
+                            <option value="Energies renouvelables">Energies renouvelables</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quel est le nom de votre secteur d'activité?
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="secteur-autre">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Quels sont vos effectifs salariés ?
+                </p>
+                <div class="suggestion">
+                    <select id="effectif" name="effectif">
+                        <option value="1">1 salarié</option>
+                        <option value="2-4">2 à 4 salariés</option>
+                        <option value="5-19">5 à 19 salariés</option>
+                        <option value="20-99">20 à 99 salariés</option>
+                        <option value="100-249">100 à 249 salariés</option>
+                        <option value="250+">250 salariés ou plus</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Quels sont les principaux effets du Covid-19 sur votre activité ? (plusieurs réponses
+                    possibles)</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="effet-baisse-des-ventes">Baisse des ventes</label>
+                        <input type="checkbox" name="effet" id="effet-baise-des-ventes" value="Baisse des ventes" />
+                    </div>
+                    <div class="form-group">
+                        <label for="rupture-approvisionnement">Rupture d’approvisionnement</label>
+                        <input type="checkbox" name="effet" id="rupture-approvisionnement"
+                            value="Rupture d’approvisionnement" />
+                    </div>
+                    <div class="form-group">
+                        <label for="difficulte-exporter">Difficulté d’exporter</label>
+                        <input type="checkbox" name="effet" id="difficulte-exporter" value="Difficulté d’exporter" />
+                    </div>
+                    <div class="form-group">
+                        <label for="probleme-infrastructure">Problèmes en lien avec vos infrastructures (internet,
+                            livraisons…)</label>
+                        <input type="checkbox" name="effet" id="probleme-infrastructure"
+                            value="Problèmes en lien avec vos infrastructures (internet, livraisons…)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="salarie-absent">Salariés absents (malades, garde d’enfants, droit de
+                            retrait)</label>
+                        <input type="checkbox" name="effet" id="salarie-absent"
+                            value="Salariés absents (malades, garde d’enfants, droit de retrait)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="client-regle-plus-facture">Clients ayant annoncé qu’ils ne régleraient pas leurs
+                            factures fournisseurs</label>
+                        <input type="checkbox" name="effet" id="client-regle-plus-facture"
+                            value="Clients ayant annoncé qu’ils ne régleraient pas leurs factures fournisseurs" />
+                    </div>
+                    <div class="form-group">
+                        <label for="arret-des-chantiers">Arrêt des chantiers / des commandes publiques</label>
+                        <input type="checkbox" name="effet" id="arret-des-chantiers"
+                            value="Arrêt des chantiers / des commandes publiques" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reduction-des-investissements">Réduction des investissements</label>
+                        <input type="checkbox" name="effet" id="reduction-des-investissements"
+                            value="Réduction des investissements" />
+                    </div>
+                    <div class="form-group">
+                        <label for="difficulte-de-tresorerie">Difficulté de trésorerie</label>
+                        <input type="checkbox" name="effet" id="difficulte-de-tresorerie"
+                            value="Difficulté de trésorerie" />
+                    </div>
+                    <div class="form-group">
+                        <label for="fermetture-temporaire-permanente">Fermeture temporaire / permanente</label>
+                        <input type="checkbox" name="effet" id="fermeture-temporaire-permanente"
+                            value="Fermeture temporaire / permanente" />
+                    </div>
+                    <div class="form-group">
+                        <label for="aucun-effet">Aucun effet</label>
+                        <input type="checkbox" name="effet" id="aucun-effet" value="Aucun effet" />
+                    </div>
+                    <div class="form-group">
+                        <label for="hausse-vente">Hausse des ventes</label>
+                        <input type="checkbox" name="effet" id="hausse-vente" value="Hausse des ventes" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ne-sais-pas">Ne sais pas</label>
+                        <input type="checkbox" name="effet" id="ne-sais-pas" value="Ne sais pas" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ne-sais-pas">Autre</label>
+                        <input type="checkbox" name="effet" id="autre-effet" value="Autre" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Veuillez préciser l'autre effet
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" name="effet-autre" id="effet-autre">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Pour faire face à la crise, avez-vous adopté l’une des stratégies suivantes ?
+                    (plusieurs réponses possibles)</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="strategie-1">Mise au chômage partiel des salariés</label>
+                        <input type="checkbox" name="strategie" id="strategie-1"
+                            value="Mise au chômage partiel des salariés" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-2">Licenciement de salariés</label>
+                        <input type="checkbox" name="strategie" id="strategie-2" value="Licenciement de salariés" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-2">Mise à disposition des salariés pour d’autres activités encore
+                            actives</label>
+                        <input type="checkbox" name="strategie" id="strategie-2"
+                            value="Mise à disposition des salariés pour d’autres activités encore actives" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-3">Télétravail</label>
+                        <input type="checkbox" name="strategie" id="strategie-3" value="Télétravail" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-4">Rééchelonnement des crédits bancaires</label>
+                        <input type="checkbox" name="strategie" id="strategie-4"
+                            value="Rééchelonnement des crédits bancaires" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-5">Vente des biens de l’entreprise</label>
+                        <input type="checkbox" name="strategie" id="strategie-5"
+                            value="Vente des biens de l’entreprise" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-6">Communication aux clients / opérations de marketing (sur les ventes en
+                            ligne par exemple)</label>
+                        <input type="checkbox" name="strategie" id="strategie-6"
+                            value="Communication aux clients / opérations de marketing (sur les ventes en ligne par exemple)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-7">Proposition de vente de nouveaux produits / services</label>
+                        <input type="checkbox" name="strategie" id="strategie-7"
+                            value="Proposition de vente de nouveaux produits / services" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-8">Fermeture temporaire</label>
+                        <input type="checkbox" name="strategie" id="strategie-8" value="Fermeture temporaire" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-9">Aucune</label>
+                        <input type="checkbox" name="strategie" id="strategie-9" value="Aucune" />
+                    </div>
+                    <div class="form-group">
+                        <label for="strategie-10">Autre</label>
+                        <input type="checkbox" name="strategie" id="strategie-10" value="Autre" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Veuillez préciser l'autre stratégie
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" name="strategie-autre" id="strategie-autre">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Quelles mesures gouvernementales vous aideraient le plus pour faire face à cette crise
+                    ? (plusieurs réponses possibles)</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="mesure-gouv-1">Soutien à l’emploi (chômage partiel, programmes sociaux…)</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-1"
+                            value="Soutien à l’emploi (chômage partiel, programmes sociaux…)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mesure-gouv-2">Aides financières (baisse des taux d’intérêt, crédits
+                            garantis…)</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-2"
+                            value="Aides financières (baisse des taux d’intérêt, crédits garantis…)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mesure-gouv-3">Pause dans le prélèvement des taxes</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-3"
+                            value="Pause dans le prélèvement des taxes" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mesure-gouv-4">Réduction des prix sur les produits importés</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-4"
+                            value="Réduction des prix sur les produits importés" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mesure-gouv-5">Absence de pénalités en cas de non-paiement des loyers et charges
+                            locatives</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-5"
+                            value="Absence de pénalités en cas de non-paiement des loyers et charges locatives" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mesure-gouv-5">Autre</label>
+                        <input type="checkbox" name="mesure-gouv" id="mesure-gouv-6" value="Autre" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">
+                    Veuillez préciser les autres mesure gouvernemental
+                </p>
+                <div class="suggestion">
+                    <div class="form-group">
+                        <input type="text" id="mesure-gouv-autre" name="mesure-gouv-autre">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Est-il facile d’accéder aux informations et avantages des programmes gouvernementaux
+                    d’aide aux PME liés au COVID-19 ?</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="tres-facile">Très facile</label>
+                        <input type="radio" name="acces-information-gouv" id="tres-facile" value="Très facile">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="facile">Facile</label>
+                        <input type="radio" name="acces-information-gouv" id="facile" value="Facile">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficile">Difficile</label>
+                        <input type="radio" name="acces-information-gouv" id="difficile" value="Difficile">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tres-difficile">Très Difficile</label>
+                        <input type="radio" name="acces-information-gouv" id="tres-difficile" value="Très Difficile">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Si vous pensez qu'il y a un risque de cessation d’activité permanente pour votre
+                    entreprise, à quelle échéance cette fermeture pourrait-elle se produire ?</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="dans-le-mois">Dans le mois</label>
+                        <input type="radio" name="cessation" id="dans-le-mois" value="Dans le mois">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dans-le-mois-6">Dans les 6 mois</label>
+                        <input type="radio" name="cessation" id="dans-le-mois-6" value="Dans les 6 mois">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pas-de-cessation">Pas de cessation d’activité envisagée</label>
+                        <input type="radio" name="cessation" id="pas-de-cessation"
+                            value="Pas de cessation d’activité envisagée">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ne-sais-pas">Ne sais pas</label>
+                        <input type="radio" name="cessation" id="ne-sais-pas" value="Ne sais pas">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="question">
+                <p class="title">Avez-vous bénéficié de l'appui du Gouvernement durant le confinement ?</p>
+
+                <div class="suggestion">
+                    <div class="form-group">
+                        <label for="appui-oui">Oui</label>
+                        <input type="radio" name="appui-gouv" id="appui-oui" value="oui">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appui-non">Non</label>
+                        <input type="radio" name="appui-gouv" id="appui-non" value="non">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="previous">Question précédent</button>
+            <button id="next">Question suivant</button>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
