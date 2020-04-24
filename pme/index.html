@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Quel impact la crise du COVID-19 a-t-elle eu sur votre entreprise ?</title>
 </head>
 
 <body>
+    <p id="ancre"></p>
     <header>
-        <h1>Quel impact la crise du Covid-19 a t-elle eu sur votre entreprise?</h1>
+        <img class="logo" src="./images/chamber-of-commerce.jpg" alt="Logo de la chambre de commerce">
+        <div class="flex-space"></div>
+        <img class="logo" src="../assets/logo_sing.png" alt="Logo de la SING">
     </header>
 
     <main>
         <div class="questions">
+            <h1>Quel impact la crise du COVID-19 a-t-elle eu sur votre entreprise ?</h1>
             <div class="question current-question">
                 <p class="title">
-                    Nom de votre entreprise
+                    Quel est le nom de votre entreprise?
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" name="nom-entreprise" id="nom-entreprise">
+                        <input type="text" name="nom-entreprise" id="nom-entreprise"
+                            placeholder="Nom de votre entreprise">
                     </div>
                 </div>
             </div>
@@ -77,13 +85,13 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="anpi-oui">Oui</label>
                         <input type="radio" name="anpi" id="anpi-oui" value="oui">
+                        <label for="anpi-oui">Oui</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="anpi-non">Non</label>
                         <input type="radio" name="anpi" id="anpi-non" value="non">
+                        <label for="anpi-non">Non</label>
                     </div>
                 </div>
             </div>
@@ -104,7 +112,7 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="number" id="anpi-numero-piece" placeholder="Numéro de Pièce d'identification">
+                        <input type="text" id="anpi-numero-piece" placeholder="Numéro de Pièce d'identification">
                     </div>
                 </div>
             </div>
@@ -116,7 +124,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" id="difficulte">
+                        <input type="text" name="difficulte" placeholder="Plus grosse difficulté" id="difficulte">
                     </div>
                 </div>
             </div>
@@ -127,7 +135,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" id="impact">
+                        <input type="text" name="impact" placeholder="Impact le plus important" id="impact">
                     </div>
                 </div>
             </div>
@@ -138,7 +146,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" id="lecon">
+                        <textarea name="lecon" placeholder="Leçon" id="lecon"></textarea>
                     </div>
                 </div>
             </div>
@@ -149,7 +157,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" id="crainte">
+                        <input type="text" placeholder="Plus grande crainte" name="crainte" id="crainte">
                     </div>
                 </div>
             </div>
@@ -212,72 +220,73 @@
 
                 <div class="suggestion">
                     <div class="form-group">
+                        <input type="checkbox" name="effet" id="effet-baisse-des-ventes" value="Baisse des ventes" />
                         <label for="effet-baisse-des-ventes">Baisse des ventes</label>
-                        <input type="checkbox" name="effet" id="effet-baise-des-ventes" value="Baisse des ventes" />
                     </div>
                     <div class="form-group">
-                        <label for="rupture-approvisionnement">Rupture d’approvisionnement</label>
                         <input type="checkbox" name="effet" id="rupture-approvisionnement"
                             value="Rupture d’approvisionnement" />
+                        <label for="rupture-approvisionnement">Rupture d’approvisionnement</label>
+
                     </div>
                     <div class="form-group">
-                        <label for="difficulte-exporter">Difficulté d’exporter</label>
                         <input type="checkbox" name="effet" id="difficulte-exporter" value="Difficulté d’exporter" />
+                        <label for="difficulte-exporter">Difficulté d’exporter</label>
                     </div>
                     <div class="form-group">
-                        <label for="probleme-infrastructure">Problèmes en lien avec vos infrastructures (internet,
-                            livraisons…)</label>
                         <input type="checkbox" name="effet" id="probleme-infrastructure"
                             value="Problèmes en lien avec vos infrastructures (internet, livraisons…)" />
+                        <label for="probleme-infrastructure">Problèmes en lien avec vos infrastructures (internet,
+                            livraisons…)</label>
                     </div>
                     <div class="form-group">
-                        <label for="salarie-absent">Salariés absents (malades, garde d’enfants, droit de
-                            retrait)</label>
                         <input type="checkbox" name="effet" id="salarie-absent"
                             value="Salariés absents (malades, garde d’enfants, droit de retrait)" />
+                        <label for="salarie-absent">Salariés absents (malades, garde d’enfants, droit de
+                            retrait)</label>
                     </div>
                     <div class="form-group">
-                        <label for="client-regle-plus-facture">Clients ayant annoncé qu’ils ne régleraient pas leurs
-                            factures fournisseurs</label>
                         <input type="checkbox" name="effet" id="client-regle-plus-facture"
                             value="Clients ayant annoncé qu’ils ne régleraient pas leurs factures fournisseurs" />
+                        <label for="client-regle-plus-facture">Clients ayant annoncé qu’ils ne régleraient pas leurs
+                            factures fournisseurs</label>
                     </div>
                     <div class="form-group">
-                        <label for="arret-des-chantiers">Arrêt des chantiers / des commandes publiques</label>
                         <input type="checkbox" name="effet" id="arret-des-chantiers"
                             value="Arrêt des chantiers / des commandes publiques" />
+                        <label for="arret-des-chantiers">Arrêt des chantiers / des commandes publiques</label>
                     </div>
                     <div class="form-group">
-                        <label for="reduction-des-investissements">Réduction des investissements</label>
                         <input type="checkbox" name="effet" id="reduction-des-investissements"
                             value="Réduction des investissements" />
+                        <label for="reduction-des-investissements">Réduction des investissements</label>
                     </div>
                     <div class="form-group">
-                        <label for="difficulte-de-tresorerie">Difficulté de trésorerie</label>
                         <input type="checkbox" name="effet" id="difficulte-de-tresorerie"
                             value="Difficulté de trésorerie" />
+                        <label for="difficulte-de-tresorerie">Difficulté de trésorerie</label>
                     </div>
                     <div class="form-group">
-                        <label for="fermetture-temporaire-permanente">Fermeture temporaire / permanente</label>
-                        <input type="checkbox" name="effet" id="fermeture-temporaire-permanente"
+                        <input type="checkbox" name="effet" id="fermetture-temporaire-permanente"
                             value="Fermeture temporaire / permanente" />
+                        <label for="fermetture-temporaire-permanente">Fermeture temporaire / permanente</label>
                     </div>
                     <div class="form-group">
-                        <label for="aucun-effet">Aucun effet</label>
                         <input type="checkbox" name="effet" id="aucun-effet" value="Aucun effet" />
+                        <label for="aucun-effet">Aucun effet</label>
                     </div>
                     <div class="form-group">
-                        <label for="hausse-vente">Hausse des ventes</label>
                         <input type="checkbox" name="effet" id="hausse-vente" value="Hausse des ventes" />
+                        <label for="hausse-vente">Hausse des ventes</label>
                     </div>
                     <div class="form-group">
-                        <label for="ne-sais-pas">Ne sais pas</label>
                         <input type="checkbox" name="effet" id="ne-sais-pas" value="Ne sais pas" />
+                        <label for="ne-sais-pas">Ne sais pas</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="ne-sais-pas">Autre</label>
                         <input type="checkbox" name="effet" id="autre-effet" value="Autre" />
+                        <label for="autre-effet">Autre</label>
                     </div>
                 </div>
             </div>
@@ -288,7 +297,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" name="effet-autre" id="effet-autre">
+                        <input type="text" name="effet-autre" placeholder="Autre effet" id="effet-autre">
                     </div>
                 </div>
             </div>
@@ -299,56 +308,56 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="strategie-1">Mise au chômage partiel des salariés</label>
                         <input type="checkbox" name="strategie" id="strategie-1"
                             value="Mise au chômage partiel des salariés" />
+                        <label for="strategie-1">Mise au chômage partiel des salariés</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-2">Licenciement de salariés</label>
                         <input type="checkbox" name="strategie" id="strategie-2" value="Licenciement de salariés" />
+                        <label for="strategie-2">Licenciement de salariés</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-2">Mise à disposition des salariés pour d’autres activités encore
-                            actives</label>
-                        <input type="checkbox" name="strategie" id="strategie-2"
+                        <input type="checkbox" name="strategie" id="strategie-20"
                             value="Mise à disposition des salariés pour d’autres activités encore actives" />
+                        <label for="strategie-20">Mise à disposition des salariés pour d’autres activités encore
+                            actives</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-3">Télétravail</label>
                         <input type="checkbox" name="strategie" id="strategie-3" value="Télétravail" />
+                        <label for="strategie-3">Télétravail</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-4">Rééchelonnement des crédits bancaires</label>
                         <input type="checkbox" name="strategie" id="strategie-4"
                             value="Rééchelonnement des crédits bancaires" />
+                        <label for="strategie-4">Rééchelonnement des crédits bancaires</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-5">Vente des biens de l’entreprise</label>
                         <input type="checkbox" name="strategie" id="strategie-5"
                             value="Vente des biens de l’entreprise" />
+                        <label for="strategie-5">Vente des biens de l’entreprise</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-6">Communication aux clients / opérations de marketing (sur les ventes en
-                            ligne par exemple)</label>
                         <input type="checkbox" name="strategie" id="strategie-6"
                             value="Communication aux clients / opérations de marketing (sur les ventes en ligne par exemple)" />
+                        <label for="strategie-6">Communication aux clients / opérations de marketing (sur les ventes en
+                            ligne par exemple)</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-7">Proposition de vente de nouveaux produits / services</label>
                         <input type="checkbox" name="strategie" id="strategie-7"
                             value="Proposition de vente de nouveaux produits / services" />
+                        <label for="strategie-7">Proposition de vente de nouveaux produits / services</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-8">Fermeture temporaire</label>
                         <input type="checkbox" name="strategie" id="strategie-8" value="Fermeture temporaire" />
+                        <label for="strategie-8">Fermeture temporaire</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-9">Aucune</label>
                         <input type="checkbox" name="strategie" id="strategie-9" value="Aucune" />
+                        <label for="strategie-9">Aucune</label>
                     </div>
                     <div class="form-group">
-                        <label for="strategie-10">Autre</label>
                         <input type="checkbox" name="strategie" id="strategie-10" value="Autre" />
+                        <label for="strategie-10">Autre</label>
                     </div>
                 </div>
             </div>
@@ -359,7 +368,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" name="strategie-autre" id="strategie-autre">
+                        <input type="text" placeholder="Autre stratégie" name="strategie-autre" id="strategie-autre">
                     </div>
                 </div>
             </div>
@@ -370,35 +379,35 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="mesure-gouv-1">Soutien à l’emploi (chômage partiel, programmes sociaux…)</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-1"
                             value="Soutien à l’emploi (chômage partiel, programmes sociaux…)" />
+                        <label for="mesure-gouv-1">Soutien à l’emploi (chômage partiel, programmes sociaux…)</label>
                     </div>
                     <div class="form-group">
-                        <label for="mesure-gouv-2">Aides financières (baisse des taux d’intérêt, crédits
-                            garantis…)</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-2"
                             value="Aides financières (baisse des taux d’intérêt, crédits garantis…)" />
+                        <label for="mesure-gouv-2">Aides financières (baisse des taux d’intérêt, crédits
+                            garantis…)</label>
                     </div>
                     <div class="form-group">
-                        <label for="mesure-gouv-3">Pause dans le prélèvement des taxes</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-3"
                             value="Pause dans le prélèvement des taxes" />
+                        <label for="mesure-gouv-3">Pause dans le prélèvement des taxes</label>
                     </div>
                     <div class="form-group">
-                        <label for="mesure-gouv-4">Réduction des prix sur les produits importés</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-4"
                             value="Réduction des prix sur les produits importés" />
+                        <label for="mesure-gouv-4">Réduction des prix sur les produits importés</label>
                     </div>
                     <div class="form-group">
-                        <label for="mesure-gouv-5">Absence de pénalités en cas de non-paiement des loyers et charges
-                            locatives</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-5"
                             value="Absence de pénalités en cas de non-paiement des loyers et charges locatives" />
+                        <label for="mesure-gouv-5">Absence de pénalités en cas de non-paiement des loyers et charges
+                            locatives</label>
                     </div>
                     <div class="form-group">
-                        <label for="mesure-gouv-5">Autre</label>
                         <input type="checkbox" name="mesure-gouv" id="mesure-gouv-6" value="Autre" />
+                        <label for="mesure-gouv-6">Autre</label>
                     </div>
                 </div>
             </div>
@@ -409,7 +418,7 @@
                 </p>
                 <div class="suggestion">
                     <div class="form-group">
-                        <input type="text" id="mesure-gouv-autre" name="mesure-gouv-autre">
+                        <input type="text" id="mesure-gouv-autre" placeholder="Autre mesure gouvernemental" name="mesure-gouv-autre">
                     </div>
                 </div>
             </div>
@@ -420,23 +429,23 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="tres-facile">Très facile</label>
                         <input type="radio" name="acces-information-gouv" id="tres-facile" value="Très facile">
+                        <label for="tres-facile">Très facile</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="facile">Facile</label>
                         <input type="radio" name="acces-information-gouv" id="facile" value="Facile">
+                        <label for="facile">Facile</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="difficile">Difficile</label>
                         <input type="radio" name="acces-information-gouv" id="difficile" value="Difficile">
+                        <label for="difficile">Difficile</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="tres-difficile">Très Difficile</label>
                         <input type="radio" name="acces-information-gouv" id="tres-difficile" value="Très Difficile">
+                        <label for="tres-difficile">Très Difficile</label>
                     </div>
 
                 </div>
@@ -448,24 +457,24 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="dans-le-mois">Dans le mois</label>
                         <input type="radio" name="cessation" id="dans-le-mois" value="Dans le mois">
+                        <label for="dans-le-mois">Dans le mois</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="dans-le-mois-6">Dans les 6 mois</label>
                         <input type="radio" name="cessation" id="dans-le-mois-6" value="Dans les 6 mois">
+                        <label for="dans-le-mois-6">Dans les 6 mois</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="pas-de-cessation">Pas de cessation d’activité envisagée</label>
                         <input type="radio" name="cessation" id="pas-de-cessation"
                             value="Pas de cessation d’activité envisagée">
+                        <label for="pas-de-cessation">Pas de cessation d’activité envisagée</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="ne-sais-pas">Ne sais pas</label>
-                        <input type="radio" name="cessation" id="ne-sais-pas" value="Ne sais pas">
+                        <input type="radio" name="cessation" id="cessation-ne-sais-pas" value="Ne sais pas">
+                        <label for="cessation-ne-sais-pas">Ne sais pas</label>
                     </div>
 
                 </div>
@@ -476,24 +485,34 @@
 
                 <div class="suggestion">
                     <div class="form-group">
-                        <label for="appui-oui">Oui</label>
                         <input type="radio" name="appui-gouv" id="appui-oui" value="oui">
+                        <label for="appui-oui">Oui</label>
                     </div>
 
                     <div class="form-group">
-                        <label for="appui-non">Non</label>
                         <input type="radio" name="appui-gouv" id="appui-non" value="non">
+                        <label for="appui-non">Non</label>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="message-warning">Veuillez répondre convenablement à la question, Merci ;o)</div>
+
         <div class="actions">
-            <button id="previous">Question précédent</button>
-            <button id="next">Question suivant</button>
+            <a href="#ancre" class="btn-border" id="previous">Question précédent</a>
+            <a href="#ancre" id="next">Question suivant</a>
+        </div>
+
+        <div class="counter-text">
+            <span class="material-icons">
+                schedule
+            </span>
+            <div class="text"></div>
         </div>
     </main>
 
+    <script src="./finish.js"></script>
     <script src="./script.js"></script>
 </body>
 

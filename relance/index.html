@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pme/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Réflexion sur la relance après la crise du COVID-19</title>
+
+    <style>
+        .sendForm {
+            display: none;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #e7e7e7;
+            color: blue;
+            font-weight: bold;
+            padding: 16px 32px;
+            box-shadow: -1.5px 3px 10px #00000055;
+            border: none;
+            outline: none;
+            font-size: 24px;
+        }
+
+        .showSendForm {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="#ancre">
+        <img src="./images/patrona.png" alt="Logo patrona" class="logo">
+        <div class="flex-space"></div>
+        <img src="../assets/logo_sing.png" alt="Logo sing" class="logo">
+    </header>
+
+    <main>
+        <form action="http://localhost:19190/relance" method="post" enctype="multipart/form-data">
+            <div class="questions">
+                <h1>Réflexion sur la relance après la crise du COVID-19</h1>
+                <div class="question current-question">
+                    <p class="title">
+                        Quel est le nom de votre entreprise ?
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <input type="text" name="entreprise-nom" placeholder="Nom de l'entreprise" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="title">
+                        Identifiez vous
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <input type="text" name="nom-prenom" placeholder="Nom & prénom" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="title">
+                        Sur quelle thématique souhaitez vous faire une proposition?
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <input type="text" name="thematique" placeholder="Thématique" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="title">
+                        Faite votre proposition ici (Soyez le plus précis et le plus concis possible)
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <textarea name="proposition" cols="30" rows="10" placeholder="Votre proposition"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="title">
+                        Vous pouvez également nous transmettre tout autre document que vous jugeriez utile pour
+                        argumenter votre proposition ?
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <input type="file" id="doc" name="doc" />
+                            <label for="doc">Cliquez ici pour charger un fichier</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="title">
+                        Quelles sont les 3 priorités selon vous pour relancer l'économie après la crise sanitaire du
+                        COVID-19?
+                    </p>
+
+                    <div class="suggestion">
+                        <div class="form-group">
+                            <input type="text" name="priorites-1" placeholder="Priorité 1" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="priorites-2" placeholder="Priorité 2" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="priorites-3" placeholder="Priorité 3" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <input type="submit" class="sendForm" value="Envoyer le formulaire">
+        </form>
+
+        <div class="message-warning">Veuillez répondre convenablement à la question, Merci ;o)</div>
+        <div class="actions">
+            <a href="#ancre" class="btn-border" id="previous">Question précédent</a>
+            <a href="#ancre" id="next">Question suivant</a>
+        </div>
+
+        <div class="counter-text">
+            <span class="material-icons">
+                schedule
+            </span>
+            <div class="text"></div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="../pme/script.js"></script>
+</body>
+
+</html>

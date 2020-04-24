@@ -4,9 +4,17 @@ const BUTTON_NEXT = document.getElementById('next');
 const BUTTON_PREVIOUS = document.getElementById('previous');
 
 BUTTON_NEXT.addEventListener('click', () => {
+    if(!isNotEmpty()){
+       showWarning();
+       setTimeout(() => {
+           hideWarning();
+       }, 5000);
+        return;
+    }
     const stepCount = calculateStepCount(currentQUestionIndex);
     if(hasNextQuestion(stepCount)){
         nextQuestion(stepCount);
+        updateQuestionCount();
     } else {
         finish();
     }
@@ -40,16 +48,22 @@ function previousQuestion(step){
     QUESTIONS[currentQUestionIndex].classList.add('current-question');
 }
 
+function updateQuestionCount(){
+    const txt = document.querySelector('.text');
+    const count = questionCount();
+    if(count == 0){
+        txt.innerHTML = "Dernière question";
+    } else {
+        txt.innerHTML = "Plus que " + count + " question" + (count  > 1 ? "s" : "");
+    }
+}
+
 function hasNextQuestion(step){
     return currentQUestionIndex+step < QUESTIONS.length;
 }
 
 function hasPreviousQUestion(step){
     return currentQUestionIndex-step >= 0;
-}
-
-function finish(){
-    //TODO On finish
 }
 
 function calculatePreviousStepCount(){
@@ -66,7 +80,7 @@ function calculatePreviousStepCount(){
  * @returns {Number}
  */
 function calculateStepCount(index){
-    const element = QUESTIONS[index].querySelector('input, select');
+    const element = QUESTIONS[index].querySelector('input, select, textarea');
     const name = element.name;
     if(name == "anpi"){
         return anpiStepCount();
@@ -102,7 +116,6 @@ function anpiStepCount(){
  */
 function verifyOther(element){
     const inputs = element.querySelectorAll('input');
-    console.log(inputs.length);
     let inputWithAutreValue = null;
     inputs.forEach(input => {
         if(input.value == "Autre"){
@@ -115,3 +128,30 @@ function verifyOther(element){
     return false;
 }
 
+function isNotEmpty(){
+    const inputs = QUESTIONS[currentQUestionIndex].querySelectorAll("input, textarea");
+    let result = false;
+    inputs.forEach(input => {
+        if(((input.type == "text" || input.type == "number" || input.tagName.toLowerCase() == "textarea")
+         && input.value != "") || input.checked == true){
+            result = true;
+        }
+    });
+    const select = QUESTIONS[currentQUestionIndex].querySelector("select");
+    if(select || (inputs[0] && inputs[0].type == "file")){
+        result = true;
+    }
+    return result;
+}
+
+function questionCount(){
+    return QUESTIONS.length - currentQUestionIndex -1;
+}
+
+function showWarning(){
+    document.querySelector('.message-warning').classList.add('show-w');
+}
+
+function hideWarning(){
+    document.querySelector('.message-warning').classList.remove('show-w');
+}
