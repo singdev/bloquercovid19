@@ -1,8 +1,7 @@
-const AUTO_TEST_URL = "http://localhost:19190";
+const AUTO_TEST_URL = "https://app.bloquercovid19.com/bat";
 
 function finish(){
     const data = getAllData();
-    console.log(data);
     postForm(data, () => {
         window.location = "./finish.html";
     });
@@ -14,7 +13,7 @@ function getAllData(){
     console.log(questions);
     questions.forEach(question => {
         const title = question.querySelector('.title').innerHTML;
-        const inputs = question.querySelectorAll('input');
+        const inputs = question.querySelectorAll('input, textarea');
         const select = question.querySelector('select');
         if(select){
             console.log(select.name);
@@ -34,7 +33,7 @@ function getAllData(){
                 }
             });
             data[inputs[0].name] = { question: title, value: array };
-        } else if(inputs[0].type == "text"){
+        } else if(inputs[0].type == "text" || inputs[0].tagName.toLowerCase() == "textarea"){
             const array = [];
             inputs.forEach(input => {
                 array.push(input.value);
