@@ -1,9 +1,6 @@
 import { AutoTest, Question } from "./autotest.js";
 
 const questions = [
-    new Question("Avez-vous voyagé hors du pays récemment ?", ["Oui", "Non"], [5, 0], null, null),
-    new Question("Avez-vous l'un des symptômes suivant: fièvre, toux, maux de tête ?", ["Oui", "Non"], [5, 0], null, null),
-    new Question("Avez-vous été en contact avec quelqu'un qui revient de l'étranger ou qui présente les symptômes de grippe depuis plusieurs jours ? ", ["Oui", "Non"], [5, 0], null, null),
     new Question("Pensez-vous avoir ou avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?",
      ["Oui","Non" ], [5, 0],
      [ new Question("quelle température ? ", ["37°c a 38°c", "38°C a 39°C", "Plus de 39°C"], [2, 3, 5], null,null)], (reponse) => {
@@ -51,9 +48,7 @@ let score = 0;
 let canNext = false;
 
 function displayQuestionCourante(){
-    if(autoTest.indexQuestionCourante == 3 && score == 0) {
-        finish();
-    } else if(autoTest.estFini() == false){
+    if(autoTest.estFini() == false){
         const question = autoTest.getQuestionCourante();
         displayQuestion(question.question);
         const container = document.querySelector('.suggestions');

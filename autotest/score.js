@@ -5,7 +5,7 @@ const result = decoded.split("value=")[1];
 
 
 let resultStr = "";
-if (result < 80) {
+if (result < 70) {
     resultStr = " votre état ne nécessite pas un avis médical, toutefois si vos symptômes évoluent, si vous avez des inquiétudes par rapport à votre état personnel ou votre historique médical, programmez une visite chez votre médecin traitant. Ne vous déplacez pas au cabinet, appelez pour demander conseil avant votre venue.";
     document.querySelector('.good').classList.add("show");
 } else {
