@@ -33,7 +33,7 @@ function getAllData(){
                 }
             });
             data[inputs[0].name] = { question: title, value: array };
-        } else if(inputs[0].type == "text" || inputs[0].tagName.toLowerCase() == "textarea"){
+        } else if(inputs[0].type == "text" || inputs[0].type == "number" || inputs[0].tagName.toLowerCase() == "textarea"){
             const array = [];
             inputs.forEach(input => {
                 array.push(input.value);
